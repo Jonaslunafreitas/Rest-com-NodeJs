@@ -2,11 +2,16 @@
     "name": "ms-authentication",
     "version": "1.0.0",
     "description": "Microservice criado durante curso com o dio",
-    "main": "index.js",
+    "main": "./dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node ./index.js"
+        "start": "node ./",
+        "build": "tsc -p ."
     },
     "author": "Jonas Luna",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^18.7.13",
+        "typescript": "^4.8.2"
+    }
 }
